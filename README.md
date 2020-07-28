@@ -2,7 +2,7 @@
  * @Author: ADI
  * @Date: 2020-07-28 14:29:52
  * @LastEditors: ADI
- * @LastEditTime: 2020-07-28 16:00:53
+ * @LastEditTime: 2020-07-28 16:09:44
 -->
 
 # 升级 babelv7.4 的变化
@@ -73,7 +73,7 @@ module.exports = {
 
 > babel 生态迭代很快，为避免时效性的问题给读者带来困惑，推荐搜索对应插件文档详查。
 
-## 常用的插件(建议查阅):
+## 常用的插件(建议查阅)
 
 1. [@babel/preset-env](https://babeljs.io/docs/en/babel-preset-env)
 2. [@babel/runtime](https://babeljs.io/docs/en/babel-runtime)
@@ -95,7 +95,8 @@ module.exports = {
 
 ```
 yarn add core-js @babel/preset-env @babel/runtime
-yarn add @babel/plugin-transform-runtime --dev
+yarn add @babel/plugin-transform-runtime -D
+
 // .babelrc
 {
     "presets": [
@@ -117,9 +118,10 @@ yarn add @babel/plugin-transform-runtime --dev
 @babel/plugin-transform-runtime
 
 ```
-// .babelrc
 yarn add @babel/runtime @babel/runtime-corejs3
 yarn add @babel/plugin-transform-runtime -D
+
+// .babelrc
 {
     "presets": [
         [
